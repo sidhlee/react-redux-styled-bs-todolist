@@ -30,8 +30,8 @@
   - We can add a ref to input in order to temporarily store the `input.value`.
   - We are not passing any of mapProps functions into `connect` because we don't need any state from the store. (remember: we're using `ref` to store input values to a variable inside this component before `render()`)
 - **SelectFilter**
-  - Lists available filtering options (`FilterLink`)
-  - Displaying options are nested as content node (e.g. All, Active, and Completed)
+  - Renders a list of available filtering options (`FilterLink`)
+  - Displaying labels are nested as children prop (e.g. All, Active, and Completed)
   - We pass 'filter' prop with hardcoded-value to each `FilterLink`. Users can click these FilterLink to trigger handlers that dispatch "SET_VISIBILITY_FILTER" action. Each of these actions also contains the specified filter type as a payload.
   - `FilterLink`
     - Container component wrapping 'Link' component.
