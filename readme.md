@@ -47,7 +47,7 @@
 - **VisibleTodoList**
   - Container component wrapping 'TodoList' component.
   - mapStateToProps
-    - provides a prop 'todos' whchi is set to the return of a function, 'getVisibleTodos'.
+    - provides a prop 'todos' whch is set to the return of a function, 'getVisibleTodos'.
     - `getVisibleTodos(todos, filter)` takes `state.todos` and `state.visibilityFilter` and returns different array based on `filter` value.
   - mapDispatchToProps
     - provides a event handler `toggleTodo`.
